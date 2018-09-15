@@ -11,7 +11,7 @@
 ###### Develop
 ![Build Status](https://travis-ci.org/alexph9/IWVG.SwC.Alejandro.Puebla.Holguin.svg?branch=develop) 
 
-####Quality Gate
+#### Quality Gate
 ![Quality Gate](https://sonarcloud.io/api/project_badges/measure?project=es.upm.miw%3Aiwvg-swc-Alejandro-Puebla-Holguin&metric=alert_status)
 
 ### Tecnologías necesarias
