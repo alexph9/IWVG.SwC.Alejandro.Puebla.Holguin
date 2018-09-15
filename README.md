@@ -5,7 +5,7 @@
 
 ### Estado del código
 
-[![Build Status](TODO: ADD)
+[![Build Status](https://travis-ci.org/alexph9/IWVG.SwC.Alejandro.Puebla.Holguin)
 
 ![Quality Gate](TODO: ADD)
 
