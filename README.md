@@ -7,9 +7,6 @@
 
 [![Build Status](https://travis-ci.org/alexph9/IWVG.SwC.Alejandro.Puebla.Holguin)
 
-![Quality Gate](TODO: ADD)
-
-
 ### Tecnologías necesarias
 * Java
 * Maven

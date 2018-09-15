@@ -13,8 +13,5 @@ notifications:
 script:
 - mvn verify
 - mvn org.jacoco:jacoco-maven-plugin:prepare-agent verify
-  mvn sonar:sonar \
-  -Dsonar.projectKey=alexph9_IWVG.SwC.Alejandro.Puebla.Holguin \
-  -Dsonar.organization=alexph9-github \
-  -Dsonar.host.url=https://sonarcloud.io \
-  -Dsonar.login=$SONAR
+- mvn sonar:sonar -Dsonar.organization=alexph9-github -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=$SONAR
+
