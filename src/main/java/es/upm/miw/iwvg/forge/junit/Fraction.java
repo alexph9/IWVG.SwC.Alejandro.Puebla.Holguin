@@ -53,4 +53,8 @@ public class Fraction {
         return denominator;
     }
 
+    public boolean isProperFraction() {
+        return this.getNumerator() < this.getDenominator();
+    }
+
 }
