@@ -55,4 +55,8 @@ class PointTest {
         assertEquals("Point{x=2, y=3}", point.toString());
     }
 
+    @Test
+    void testEquals() {
+        assertEquals(true, point.equals(new Point(2,3)));    }
+
 }
