@@ -36,7 +36,7 @@ public class FractionTest {
     @Test
     void testIsProperFraction() {
         assertFalse(fraction.isProperFraction());
-        assertFalse(fraction.isProperFraction());
+        assertFalse(defaultFraction.isProperFraction());
     }
 
 }
