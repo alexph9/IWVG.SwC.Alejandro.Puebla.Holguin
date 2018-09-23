@@ -10,13 +10,13 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 public class FractionTest {
     private Fraction fraction;
     private Fraction defaultFraction;
-    private Fraction noProperFraction;
+    private Fraction properFraction;
 
     @BeforeEach
     void before() {
         fraction = new Fraction(2, 1);
         defaultFraction = new Fraction();
-        noProperFraction = new Fraction(1, 2);
+        properFraction = new Fraction(1, 2);
     }
 
     @Test
@@ -40,7 +40,7 @@ public class FractionTest {
     void testIsProperFraction() {
         assertFalse(fraction.isProperFraction());
         assertFalse(defaultFraction.isProperFraction());
-        assertTrue(noProperFraction.isProperFraction());
+        assertTrue(properFraction.isProperFraction());
     }
 
 }
