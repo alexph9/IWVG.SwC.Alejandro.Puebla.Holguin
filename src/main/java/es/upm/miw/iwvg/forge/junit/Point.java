@@ -32,7 +32,7 @@ public class Point {
         this.y -= origin.getY();
     }
 
-    public boolean equals(Point point){return (this.x==point.x && this.y==point.y);}
+    public boolean isEquals(Point point){return (this.getX()==point.getX() && this.getY()==point.getY());}
 
     public int getX() {
         return this.x;

@@ -56,7 +56,7 @@ class PointTest {
     }
 
     @Test
-    void testEquals() {
-        assertEquals(true, point.equals(new Point(2,3)));    }
+    void testIsEquals() {
+        assertEquals(true, point.isEquals(new Point(2,3)));    }
 
 }
