@@ -5,15 +5,18 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class FractionTest {
     private Fraction fraction;
     private Fraction defaultFraction;
+    private Fraction noProperFraction;
 
     @BeforeEach
     void before() {
         fraction = new Fraction(2, 1);
         defaultFraction = new Fraction();
+        noProperFraction = new Fraction(1, 2);
     }
 
     @Test
@@ -37,6 +40,7 @@ public class FractionTest {
     void testIsProperFraction() {
         assertFalse(fraction.isProperFraction());
         assertFalse(defaultFraction.isProperFraction());
+        assertTrue(noProperFraction.isProperFraction());
     }
 
 }
