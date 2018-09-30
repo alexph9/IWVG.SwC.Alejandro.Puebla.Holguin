@@ -11,12 +11,13 @@ public class FractionTest {
     private Fraction fraction;
     private Fraction defaultFraction;
     private Fraction properFraction;
-
+    private Fraction fractiontoMultiply;
     @BeforeEach
     void before() {
         fraction = new Fraction(2, 1);
         defaultFraction = new Fraction();
         properFraction = new Fraction(1, 2);
+        fractiontoMultiply = new Fraction (3,6);
     }
 
     @Test
@@ -42,5 +43,11 @@ public class FractionTest {
         assertFalse(defaultFraction.isProperFraction());
         assertTrue(properFraction.isProperFraction());
     }
-
+    @Test
+    void testMultiply(){
+        assertEquals(4, fraction.multiply(fraction).getNumerator());
+        assertEquals(1, fraction.multiply(fraction).getDenominator());
+        assertEquals(6, fraction.multiply(fractiontoMultiply).getNumerator());
+        assertEquals(6, fraction.multiply(fractiontoMultiply).getDenominator());
+    }
 }
