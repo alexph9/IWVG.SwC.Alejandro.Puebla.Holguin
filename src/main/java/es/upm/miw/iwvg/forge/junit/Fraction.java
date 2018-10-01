@@ -51,6 +51,10 @@ public class Fraction {
         return aux;
     }
 
+    public Fraction division(Fraction divisor){
+        return new Fraction(this.numerator*divisor.getDenominator(),this.denominator*divisor.getNumerator());
+    }
+
     public int getNumerator() {
         return numerator;
     }
