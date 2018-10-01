@@ -50,4 +50,12 @@ public class FractionTest {
         assertEquals(6, fraction.multiply(fractiontoMultiply).getNumerator());
         assertEquals(6, fraction.multiply(fractiontoMultiply).getDenominator());
     }
+
+    @Test
+    void testDivision(){
+        assertEquals(2, fraction.division(fraction).getNumerator());
+        assertEquals(2, fraction.division(fraction).getDenominator());
+        assertEquals(4, fraction.division(properFraction).getNumerator());
+        assertEquals(1, fraction.division(properFraction).getDenominator());
+    }
 }
