@@ -44,6 +44,16 @@ public class Fraction {
     public double decimal() {
         return (double) numerator / denominator;
     }
+    public Fraction multiply(Fraction fractionToMultiply){
+        Fraction aux = new Fraction();
+        aux.numerator = this.numerator * fractionToMultiply.numerator;
+        aux.denominator = this.denominator * fractionToMultiply.denominator;
+        return aux;
+    }
+
+    public Fraction division(Fraction divisor){
+        return new Fraction(this.numerator*divisor.getDenominator(),this.denominator*divisor.getNumerator());
+    }
 
     public int getNumerator() {
         return numerator;
@@ -51,6 +61,10 @@ public class Fraction {
 
     public int getDenominator() {
         return denominator;
+    }
+
+    public boolean isProperFraction() {
+        return this.getNumerator() < this.getDenominator();
     }
 
 }
